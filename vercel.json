@@ -1,10 +1,13 @@
-
 {
-  "functions": {
-    "*.php": {
-      "runtime": "vercel-php@0.7.1"
-    }
-  },
+  "version": 2,
+  "builds": [
+    { "src": "index.php", "use": "vercel-php@0.7.1" },
+    { "src": "shop.php", "use": "vercel-php@0.7.1" },
+    { "src": "product-detail.php", "use": "vercel-php@0.7.1" },
+    { "src": "cart.php", "use": "vercel-php@0.7.1" },
+    { "src": "about.php", "use": "vercel-php@0.7.1" },
+    { "src": "contact.php", "use": "vercel-php@0.7.1" }
+  ],
   "routes": [
     { "src": "/(.*)", "dest": "/$1" }
   ]
